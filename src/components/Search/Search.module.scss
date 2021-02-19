@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+.card {
+  padding: 1px;
+  border-radius: $border-radius;
+  flex-shrink: 0;
+  background: linear-gradient(
+    -67deg,
+    rgba(#c8d8e7, 0.7),
+    rgba(255, 255, 255, 0.8)
+  );
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+  width: 380px;
+  &__inner {
+    padding: 16px 16px;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+  }
+  &__container {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  &__icon {
+    cursor: pointer;
+    min-width: 46px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 12px;
+    box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #909294;
+
+    svg {
+      transform: translate(-1px, -1px);
+    }
+  }
+  &__input {
+    width: 100%;
+
+    input {
+      padding: 16px 32px;
+      border: none;
+      display: block;
+      font-family: "Orbitron", sans-serif;
+      font-weight: 600;
+      color: #a9b8c9;
+      transition: all 240ms ease-out;
+      width: 100%;
+
+      &::placeholder {
+        color: #6d7f8f;
+      }
+
+      &:focus {
+        outline: none;
+        color: #6d7f8f;
+        background-color: #fbfbfb;
+      }
+    }
+  }
+}

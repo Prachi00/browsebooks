@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.bookCard {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #a9a8a3;
+  &__container {
+    background: $secondary-color;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    z-index: 2;
+  }
+  &__hero {
+    height: 342px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  &__details {
+    padding: 190px 0 0 280px;
+
+    &__title1 {
+      font-size: 44px;
+      margin-bottom: 13px;
+      position: relative;
+
+    }
+    &__title2 {
+      color: #c7c1ba;
+      font-size: 23px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    &__content {
+        font-size: 1.3rem;
+        color: #585252;
+        margin-bottom: 1rem;
+    }
+  }
+  &__by {
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+  }
+}

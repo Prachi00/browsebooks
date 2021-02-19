@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+.book {
+    padding: 5px 25px 10px 25px;
+    max-width: 25%;
+    width: 17%;
+    transition: transform 500ms;
+    cursor: pointer;
+    @media (max-width: $small-screen) {
+        max-width: 100%;
+        width: 100%;
+      }
+    &:hover {
+        transform: scale(1.2);
+    }
+    &__heading {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

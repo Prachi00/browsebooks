@@ -1,0 +1,1 @@
+export const PLACEHOLDER_IMG = "https://i.picsum.photos/id/1073/250/364.jpg?hmac=ArIROoCQP_4UPFiZTwqYFRT7YuUj99e1QwbBRI_t1bU"
